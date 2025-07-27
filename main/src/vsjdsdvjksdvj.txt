@@ -1,0 +1,21 @@
+1.
+2
+5
+
+2.
+5
+
+3.
+address person1
+address p2
+name raz age 9
+name raz age 9
+
+4.
+name dan age 16
+name dan age 16
+
+5.
+name dan, age 16
+
+6.
