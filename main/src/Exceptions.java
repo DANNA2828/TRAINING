@@ -22,8 +22,18 @@ public class Exceptions {
 
 	public static void q3() {
 		Scanner scanner = new Scanner(System.in);
-
-
+		while (true) {
+			int i = scanner.nextInt();
+			if (i == 45) {
+				try {
+					throw new IllegalArgumentException("aaa");
+				}
+				catch (IllegalArgumentException e) {}
+			}
+			if (i == 100) {
+				throw new RuntimeException("asfd");
+			}
+		}
 
 	}
 
