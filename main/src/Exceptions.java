@@ -1,3 +1,6 @@
+import javax.naming.AuthenticationException;
+import java.io.FileNotFoundException;
+import java.net.BindException;
 import java.util.Scanner;
 
 public class Exceptions {
@@ -34,7 +37,27 @@ public class Exceptions {
 				throw new RuntimeException("asfd");
 			}
 		}
+	}
 
+	public static void q4(int i) throws Exception{
+		switch (i) {
+			case 1 -> throw new FileNotFoundException();
+			case 2 -> throw new BindException();
+			case 3 -> throw new AuthenticationException();
+		}
+	}
+
+	public static void q5(int i) {
+		try {
+			q4(i);
+		}
+		catch (Exception e) {
+			switch (e.getClass().getName()) {
+				case "java.io.FileNotFoundException" -> System.out.println(1);
+				case "java.net.BindException" -> System.out.println(2);
+				case "javax.naming.AuthenticationException" -> System.out.println(3);
+			}
+		}
 	}
 
 }
