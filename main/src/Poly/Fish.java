@@ -35,4 +35,24 @@ public abstract class Fish {
 		}
 	}
 
+	public static void q9(Fish[] fishes) {
+		int count = 0;
+		for (Fish f : fishes) {
+			if (f instanceof ProfessionalBasketBallPlayer) {
+				count++;
+			}
+		}
+		ProfessionalBasketBallPlayer[] ar = new ProfessionalBasketBallPlayer[count];
+		count = 0;
+
+		for (Fish f : fishes) {
+			if (f instanceof ProfessionalBasketBallPlayer) {
+				ar[count] = (ProfessionalBasketBallPlayer) f;
+				count++;
+			}
+		}
+
+		q4(ar);
+	}
+
 }
