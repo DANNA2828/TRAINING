@@ -24,4 +24,15 @@ public abstract class Fish {
 		System.out.println("walk");
 	}
 
+	public static void q4(ProfessionalBasketBallPlayer[] players) {
+		for (ProfessionalBasketBallPlayer p : players) {
+			if (p instanceof Fish) {
+				((Fish) p).goToWork();
+				p.playBasketBall();
+			} else {
+				p.playBasketBall();
+			}
+		}
+	}
+
 }
