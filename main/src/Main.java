@@ -4,7 +4,7 @@ import java.net.BindException;
 public class Main {
 	public static void main(String[] args) throws Exception {
 
-		Exceptions.q5(1);
+		Exceptions.q6(6);
 
 
 	}
