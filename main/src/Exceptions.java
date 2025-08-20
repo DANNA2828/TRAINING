@@ -65,7 +65,6 @@ public class Exceptions {
 	public static void q6(int i) throws Exception {
 		try {
 			q4(i);
-			System.out.println("here");
 			throw new RuntimeException();
 		}
 		catch (FileNotFoundException e) {
@@ -79,6 +78,9 @@ public class Exceptions {
 		catch (AuthenticationException e) {
 			System.out.println(3);
 			throw new AuthenticationException();
+		}
+		finally {
+			System.out.println("here");
 		}
 	}
 
